@@ -1,0 +1,84 @@
+.checkboxCSS
+{
+    
+    display: flex;
+    padding-left: 12em;
+
+}
+.own
+{
+    width: 20em;
+    margin-right: -7em;
+    padding-left: 5em;
+    margin-left: 0em;
+
+}
+.btc
+{
+    width: 28em;
+    margin-left: -13em;
+    padding-top: 0em;
+    padding-right: 0em;
+    margin-right: -16em;
+}
+.opt
+{width: 20em;
+    margin-right: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
+    margin-left: 0em;
+}
+.middle {
+    padding-top: 4em;
+    border-top: 4px solid;
+}
+.borderLeft
+{
+border-left: 4px solid;
+}
+.borderRight
+{
+border-right: 4px solid;
+}
+.pbc
+{
+  /*  width: 19em;
+    margin-right: -11em;
+    padding-left: 3em;
+    margin-left: -1em;*/
+    width: 19em;
+    margin-right: -11em;
+    padding-left: 3em;
+    padding-right: 2em;
+    margin-left: 2em;
+}
+.dbc
+{
+    /*width: 24em;
+    margin-right: 4em;
+    padding-left: 0em;
+    padding-right: 4em;
+    margin-left: -1em;*/
+    width: 24em;
+    margin-right: 4em;
+    padding-left: 0em;
+    padding-right: 10em;
+    margin-left: -1em;
+}
+.fc
+{
+    width: 30em;
+    margin-left: -24em;
+    padding-top: 0em;
+    padding-right: 18em;
+    margin-right: -26em;
+  
+}
+.overflow
+{
+    overflow: hidden;
+}
+.twoDivinaRow
+{
+    display:flex;
+}

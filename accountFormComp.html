@@ -1,0 +1,162 @@
+<template>
+
+    <div class="spinner-container">
+        <lightning-spinner if:true={isLoading} alternative-text="Saving..."></lightning-spinner>
+        <div if:false={isLoading}>
+    <lightning-card title="Account Record Form" icon-name="standard:account">
+        <lightning-record-edit-form record-id={recordId} object-api-name="Account"
+        onsuccess={handleSuccess} onsubmit ={handleSubmit}>
+        <lightning-messages>
+        </lightning-messages>
+        
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_4-of-12 borderRight">
+    
+        <lightning-input-field field-name="Company__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Website">
+        </lightning-input-field>
+        <lightning-input-field field-name="BillingAddress">
+        </lightning-input-field>
+     
+        <lightning-input-field field-name="Phone">
+        </lightning-input-field>
+        <lightning-input-field field-name="Fax">
+        </lightning-input-field>
+        <div class="middle"></div>
+        <div class="twoDivinaRow" >
+        <lightning-input-field field-name="Square_Feet__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Floor__c">
+        </lightning-input-field>
+    </div>
+        
+        <lightning-input-field field-name="All_Employees__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Lease_Expiration__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Portfolio_Square_Feet__c">
+        </lightning-input-field>
+        
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col own">
+                <lightning-input-field  class="lightning-input-field"  field-name="Own__c">
+                </lightning-input-field>
+            </div>
+            <div class="slds-col opt">
+                <lightning-input-field  class="lightning-input-field"  field-name="Options__c">
+                </lightning-input-field>
+            </div>
+            <div class="slds-col btc">
+                <lightning-input-field  class="lightning-input-field "   field-name="Below_Threshold__c">
+                </lightning-input-field>
+            </div>
+          </div>
+  
+        <lightning-input-field field-name="Lease_Info__c">
+        </lightning-input-field>
+    </div>
+    <div class="slds-col slds-size_4-of-12 " >
+<lightning-input-field field-name="Broker_Name__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Broker__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Broker_X_Expiration__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Internal__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="CBRE_SPOC__c">
+        </lightning-input-field>
+        <div class="middle">
+        <lightning-input-field field-name="Industry__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Buyer_Classification__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Product_Type__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Parent_Company__c">
+        </lightning-input-field>
+        
+        <lightning-input-field field-name="Headquarter_Address__c	">
+        </lightning-input-field>
+        
+        
+            
+            <div class="checkboxCSS">
+            <lightning-input-field   field-name="D__c">
+            </lightning-input-field> 
+           
+            <lightning-input-field  field-name="D__c">
+            </lightning-input-field> 
+            <lightning-input-field  field-name="D__c">
+            </lightning-input-field> 
+            <lightning-input-field  field-name="D__c">
+            </lightning-input-field> 
+       
+        </div>
+        
+
+        
+        
+        <lightning-input-field field-name="Referal__c">
+        </lightning-input-field>
+    </div>
+    </div>
+    <div class="slds-col slds-size_4-of-12 borderLeft">
+<lightning-input-field field-name="Space_Type__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Previous_Location__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Primary_Business__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Foreign__c">
+        </lightning-input-field>
+        <div class="slds-grid slds-gutters overflow">
+            <div class="slds-col pbc">
+                <lightning-input-field  id="label-chekbox" field-name="Public_Company__c" >
+                </lightning-input-field>
+            </div>
+            <div class="slds-col dbc">
+                <lightning-input-field field-name="Delete_Company__c">
+                </lightning-input-field>
+            </div>
+            <div class="slds-col fc">
+                <lightning-input-field   field-name="Fortune_500__c">
+                </lightning-input-field>
+            </div>
+        </div>
+       
+        <lightning-input-field field-name="TIM__c">
+        </lightning-input-field>
+        <div class="middle">
+        <lightning-input-field field-name="Relationships__c">
+        </lightning-input-field>
+        
+        <lightning-input-field field-name="Their_Acct_Firm__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Their_Associations__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Their_Clients__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Their_Law_Firm__c">
+        </lightning-input-field>
+        <lightning-input-field field-name="Architect__c">
+        </lightning-input-field>
+        </div>
+    </div>
+    </div> 
+
+
+      <lightning-button class="slds-m-top_small slds-align_absolute-center" variant="brand" type="submit" name="update" label="Update">
+
+      </lightning-button>
+      
+      </lightning-record-edit-form>
+
+  
+    </lightning-card>
+
+
+</div>
+</div>
+</template>
